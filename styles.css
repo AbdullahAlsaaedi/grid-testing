@@ -1,0 +1,73 @@
+body {
+  height: 100vh;
+  background-color: rgb(59, 1, 59);
+  padding: 20px;
+}
+
+.container {
+  background-color: rgb(131, 60, 127);
+  height: 90vh;
+  border-radius: 10px;
+  padding: 4px;
+
+  display: grid;
+  grid-template-columns: 50px 50px 1fr 1fr 1fr;
+  grid-template-rows: 5fr 2fr repeat(3, 1fr);
+  grid-template-areas:
+    "one one one one one"
+    "t t f f f"
+    "th th fo fo ."
+    "s sev e n n";
+
+  /* grid-gap: 20px; */
+}
+
+.item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(67, 31, 134);
+  border-radius: 30px;
+  margin: 2px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.548);
+}
+
+.item {
+  background-color: rgb(120, 170, 73);
+}
+.item-1 {
+  background-color: rgb(165, 197, 172);
+  grid-area: one;
+}
+.item-2 {
+  background-color: rgb(124, 131, 63);
+  grid-area: t;
+}
+.item-3 {
+  background-color: rgb(73, 40, 63);
+  grid-area: th;
+}
+.item-4 {
+  background-color: rgb(207, 230, 228);
+  grid-area: fo;
+}
+.item-5 {
+  background-color: rgb(92, 11, 243);
+  grid-area: f;
+}
+.item-6 {
+  background-color: rgb(219, 216, 21);
+  grid-area: s;
+}
+.item-7 {
+  background-color: rgb(91, 150, 160);
+  grid-area: sev;
+}
+.item-8 {
+  background-color: rgb(88, 86, 92);
+  grid-area: e;
+}
+.item-9 {
+  background-color: rgb(255, 0, 0);
+  grid-area: n;
+}
